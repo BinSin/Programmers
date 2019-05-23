@@ -1,2 +1,2 @@
 # Programmers
-(프로그래머스)[https://programmers.co.kr/learn/challenges]
+[프로그래머스](https://programmers.co.kr/learn/challenges)
