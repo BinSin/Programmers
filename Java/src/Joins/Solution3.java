@@ -19,10 +19,12 @@ public class Solution3 {
 	        int answer = termSize;
 
 	        while (termSize >= 1) {
+	        	/*
 	            if (s.length() % termSize != 0) {
 	                termSize = (int)(Math.ceil(termSize / 2.));
 	                continue;
 	            }
+	            */
 	            int iteration = s.length() / termSize;
 	            int flag = 1;
 	            String pivot = s.substring(0, termSize);
@@ -34,7 +36,8 @@ public class Solution3 {
 	            if (flag == 1) {
 	                answer = termSize;
 	            }
-
+	            
+	            // System.out.println("termSize : " + termSize);
 	            termSize = d(s.length(), termSize);
 	        }
 	        return answer;
@@ -43,7 +46,7 @@ public class Solution3 {
 
 	public static void main(String[] args) {
 
-		System.out.println(solution("abcabcabc"));
+		System.out.println(solution("abababab"));
 	}
 
 }
